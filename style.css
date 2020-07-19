@@ -1,0 +1,58 @@
+.w3-xxlarge.w3-text-white {
+    /* background-color:black; */
+}
+
+.splash-page-header-image {
+    height: 100vh;
+}
+
+.splash-image-text {
+    /* background: white; */
+    color:white;
+    padding: 2vw;
+}
+.splash-image-text::after {
+    content: "";
+    background:darkslategray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    border-radius: 5px;
+    z-index: -1;
+}
+.projects .w3-col {
+    float:none;
+}
+.projects .w3-row-padding {
+    display: flex;
+    flex-direction: row;
+}
+.projects .w3-display-topleft {
+    display: none;
+}
+.projects .w3-display-container{
+    /* position: relative; */
+    -webkit-transform: scale(1);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transition:.3s;
+    transform: scale(1);
+    transform-origin: 0% 0%;
+    transition:.3s;
+    transform-box: fill-box;
+    z-index: 1;
+}
+.projects .w3-display-container:hover {
+    -webkit-transform: scale(1.5);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-transition:.3s;
+    transform: scale(1.5);
+    transform-origin: 0% 0%;
+    transition:.3s;
+    z-index: 50;
+}
+.projects .w3-display-container:hover .w3-display-topleft {
+    display: block;
+}
