@@ -56,3 +56,13 @@
 .projects .w3-display-container:hover .w3-display-topleft {
     display: block;
 }
+.about-photo {
+    clip-path: circle(50%);
+    width: auto;
+}
+#about .flex-col {
+    display: flex;
+}
+#about .short-bio {
+    margin-left: 3vw;
+}
