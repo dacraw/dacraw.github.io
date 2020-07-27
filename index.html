@@ -19,6 +19,7 @@
     <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#skills" class="w3-bar-item w3-button">Skills</a>
       <a href="#contact" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
@@ -46,30 +47,73 @@
 
     <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-display-container">
+          <div class="w3-display-container">
             <div class="w3-display-topleft w3-black w3-padding">CapApp</div>
-            <a target="_blank" href="https://cap-app1000.herokuapp.com">
-                <img src="https://user-images.githubusercontent.com/59629330/87880605-f59f8f00-c9c0-11ea-8113-2ae27a63b7dc.png" alt="CapApp" style="width:100%">
-            </a>
-        </div>
+            <div>
+              <a target="_blank" href="https://cap-app1000.herokuapp.com">
+                <img src="https://user-images.githubusercontent.com/59629330/87880605-f59f8f00-c9c0-11ea-8113-2ae27a63b7dc.png" alt="CapApp">
+              </a>
+              <div class="project-sublinks">
+                <a target="_blank" href="https://cap-app1000.herokuapp.com/">Live</a> 
+                <a target="_blank" href="https://github.com/dacraw/CapApp">Github</a>
+              </div>
+            </div>
+            <div>
+              <h5>Financial investing project using Rails/React/Redux that allows users to create and maintain dummy stock portfolios.</h5>
+              <ul>
+                <li>Implemented interactive charts using Recharts for presentation and Cloud IEX API calls for current data, in order to provide real-time stock data representations of stocks and user portfolios.</li>
+                <li>Developed backend API that uses Rails for RESTful HTTP processes, allowing users to asynchronously store and retrieve their stock and watchlist data.</li>
+                <li>Create watchlists that are displayed and manipulated in a dashboard sidebar by using React components that incorporate Redux state, allowing for easy stock additions and removals.</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">VitalDB</div>
-            <a target="_blank" href="https://vital-db.herokuapp.com/">
-                <img src="https://user-images.githubusercontent.com/59629330/87880561-9a6d9c80-c9c0-11ea-94a4-3ea88475e708.png" alt="VitalDB" style="width:100%">
-            </a>
-        </div>
+          <div class="w3-display-container">
+              <div class="w3-display-topleft w3-black w3-padding">VitalDB</div>
+              <div>
+                <a target="_blank" href="https://vital-db.herokuapp.com/">
+                    <img src="https://user-images.githubusercontent.com/59629330/87880561-9a6d9c80-c9c0-11ea-94a4-3ea88475e708.png" alt="VitalDB">
+                </a>
+                <div class="project-sublinks">
+                  <a target="_blank" href="https://vital-db.herokuapp.com/">Live</a> 
+                  <a target="_blank" href="https://github.com/Vital-DB/vital-db">Github</a>
+                </div>
+              </div>
+              <div>
+                <h5>Health vitals tracking app produced in a team setting with the Mongo/Express/React/Node (MERN) stack that allows users to visually monitor changes over time.	    </h5>
+                <ul>
+                  <li>Consolidated user health vitals inside of a Mongo database using React to send the HTTP requests, allowing the user to keep a record of their health vitals, checkup history and allergies.</li>
+                  <li>Charted health vitals by category using a custom designed interactive Recharts display and user data from Mongo, allowing users to graphically view their health vitals and hover over points on the chart to view that day’s specific health vital information.</li>
+                  <li>Supervised team by delegating responsibilities and directing project direction, resulting in efficient production with no conflicts.</li>
+                </ul>
+              </div>
+          </div>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-        <div class="w3-display-container">
-            <div class="w3-display-topleft w3-black w3-padding">Tower Defense</div>
-            <a target="_blank" href="https://dc-tower-defense.herokuapp.com/">
-                <img src="https://user-images.githubusercontent.com/59629330/87880683-a574fc80-c9c1-11ea-8358-80ff1db4f31c.png" alt="Tower Defense" style="width:100%">
-            </a>
-        </div>
+          <div class="w3-display-container">
+              <div class="w3-display-topleft w3-black w3-padding">Tower Defense</div>
+              <div>
+                <a target="_blank" href="https://dc-tower-defense.herokuapp.com/">
+                    <img src="https://user-images.githubusercontent.com/59629330/87880683-a574fc80-c9c1-11ea-8358-80ff1db4f31c.png" alt="Tower Defense">
+                </a>
+                <div class="project-sublinks">
+                  <a target="_blank" href="https://dacraw.github.io/tower-defense/">Live</a> 
+                  <a target="_blank" href="https://github.com/dacraw/tower-defense">Github</a>
+                </div>
+              </div>
+              <div>
+                <h5>Defend base against increasingly stronger invaders, employing Javascript, HTML, and CSS.</h5>
+                <ul>
+                  <li>Implemented tower targeting system using iteration between enemies within range, causing towers to all focus on the closest enemy once it passes half the canvas. </li>
+                  <li>Leveraged requestAnimationFrame() and canvas to repeatedly and asynchronously draw and reposition elements linked to class instances, resulting in a tower defense game with animated waves of enemies and towers that aim at their current target.</li>
+                  <li>Incorporated asynchronous Javascript functions for gameplay control, allowing for various gameplay functions such as  upgrading tower damage, tracking each enemy’s current health, and increasing resource generation rate.</li>
+                </ul>
+              </div>
+          </div>
         </div>
     </div>
+  </div>  
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
@@ -85,48 +129,53 @@
         <div class="short-bio">
             <p>Hi! I'm Douglas Crawford and I'm a passionate software developer. I really love working with React and Javascript because of their asychronous functions that allow for an interactive web page experience. I have built one full-stack project using Rails/React/Redux, another using the Mongo/Express/React/Node (MERN) stack, and a game using strictly Javascript/HTML/SASS with no external libraries. Please check them out! I am looking for a team project to work on together, and will bring an amicable personality and strong Javascript and React skills to the table. I'm always looking to master React and Javascript, but in my free time I enjoy video gaming, Netflix binging, and when permitted, playing at the gym. 
             </p>
-            <p>
-                Reach out to me at <a href="http://github.com/dacraw" target="_blank">Github</a> or <a href="https://www.linkedin.com/in/doug-a-crawford/" target="_blank">LinkedIn</a> so we can discuss working together on a project. Have a great day! &#128513;
-            </p>
+            <div class="two-col">
+              <a class="resume" href="Douglas_Crawford_Resume.pdf">
+                <p class="view-resume">View my Resume.</p>
+                <img src="images/resume.png" >
+              </a>
+              <div class="social-links">
+                <p class="social-links-header">Reach out to me and say hello! &#128513;</p>
+                <a title="Visit me on LinkedIn!" href="https://www.linkedin.com/in/doug-a-crawford/"><img alt="Douglas-Crawford-LinkedIn" class="social-link" src="images/linkedin-logo.png"></a>
+                <a title="Visit me on Github!" href="https://github.com/dacraw"><img alt="Douglas-Crawford-Github" class="social-link" src="images/github.png"></a>
+                <a title="Visit me on Angel List!" href="https://angel.co/u/douglas-crawford-7"><img alt="Douglas-Crawford-Angellist" class="social-link" src="images/angellist.png"></a>
+              </div>
+            </div>
         </div>
     </div>
   </div>
 
-  <!-- <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-      <h3>John Doe</h3>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  <!-- Skills Section -->
+  <div class="w3-container w3-padding-32" id="skills">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Skills</h3>
+    <div class="skills-icons">
+      <img src="images/javascript.png" alt="Javascript"  title="Javascript">
+      <img src="images/github.png" alt="GitHub"  title="GitHub">
+      <img src="images/html5.png" alt="HTML5"  title="HTML5">
+      <img src="images/jquery.png" alt="jQuery"  title="jQuery">
+        <img src="images/css3.png" alt="CSS3" title="CSS3">
+        <img src="images/express.png" alt="Express JS"  title="Express JS">
+        <img src="images/heroku.png" alt="Heroku"  title="Heroku">
+        <img src="images/mongodb.jpg" alt="MongoDB" title="MongoDB">
+        <img src="images/node.jpg" alt="Node JS" title="Node JS">
+        <img src="images/postgres.png" alt="Postgresql" title="Postgresql">
+        <img src="images/postman.png" alt="Postman" title="Postman">
+        <img src="images/rails.png" alt="Rails 5" title="Rails 5">
+        <img src="images/react.png" alt="React" title="React">
+        <img src="images/redux.png" alt="Redux" title="Redux">
+        <img src="images/rspec.png" alt="RSpec" title="RSpec">
+        <img src="images/ruby.webp" alt="Ruby" title="Ruby">
+        <img src="images/sass.png" alt="Sass SCSS" title="Sass SCSS">
+        <img src="images/sql.png" alt="SQL" title="SQL - Structured Query Language">
+        <img src="images/vscode.png" alt="Microsoft Visual Studio Code" title="Microsoft Visual Studio Code">
+        <img src="images/webpack.png" alt="Webpack" title="Webpack">
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-      <h3>Jane Doe</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-      <h3>Mike Ross</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-      <h3>Dan Star</h3>
-      <p class="w3-opacity">Architect</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
-    </div>
-  </div> -->
+  </div>
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Let's get in touch and talk about your next project.</p>
+    <p>Let's get in touch!</p>
     <table>
         <tbody>
             <tr>
@@ -153,31 +202,39 @@
                 <th>Location:</th>
                 <td>New York, NY</td>
             </tr>
+            <tr>
+                <th>Resume:</th>
+                <td><a href="Douglas_Crawford_Resume.pdf">Douglas Crawford Resume - Full-Stack Web Developer</a></td>
+            </tr>
         </tbody>
     </table>
-    <!-- <form action="/action_page.php" target="_blank">
-      <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-      <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-      <button class="w3-button w3-black w3-section" type="submit">
-        <i class="fa fa-paper-plane"></i> SEND MESSAGE
-      </button>
-    </form> -->
   </div>
   
-<!-- Image of location/map -->
-<div class="w3-container">
-  <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
-</div>
 
-<!-- End page content -->
 </div>
 
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+  <div>
+    <h4>Personal Online Links:</h4>
+    <a target="_blank" href="https://github.com/dacraw">Github</a>
+    <a target="_blank" href="https://www.linkedin.com/in/doug-a-crawford/">LinkedIn</a>
+    <a target="_blank" href="https://angel.co/u/douglas-crawford-7">AngelList</a>
+  </div>
+  <div>
+    <h4>Projects:</h4>
+    <a target="_blank" href="http://cap-app1000.herokuapp.com/">CapApp</a>
+    <a target="_blank" href="https://vital-db.herokuapp.com/">VitalDB</a>
+    <a target="_blank" href="https://dacraw.github.io/tower-defense">Tower Defense</a>
+  </div>
+  <div class="contact">
+    <h3>Douglas A. Crawford</h3>
+    <h3>Full-Stack Web Developer</h3>
+    <h3>doug.a.crawford@gmail.com</h3>
+    <h3>(760) 219-0584</h3>
+  </div>
 </footer>
 
 </body>
