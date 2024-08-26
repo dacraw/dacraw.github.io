@@ -75,6 +75,62 @@
         <div class="w3-row-padding">
           <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-display-container">
+              <div class="w3-display-topleft w3-black w3-padding">
+                Workout Recorder
+              </div>
+              <div>
+                <a target="_blank" href="https://cap-app1000.herokuapp.com">
+                  <img
+                    src="images/workout-recorder-dacraw.png"
+                    alt="Workout Recorder"
+                  />
+                </a>
+                <div class="project-sublinks">
+                  <a target="_blank" href="https://workout-recorder.fly.dev/"
+                    >Live</a
+                  >
+                  <a
+                    target="_blank"
+                    href="https://github.com/dacraw/workout-recorder"
+                    >Github</a
+                  >
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Rails 7 App that allows workouts to be recorded and analyzed
+                  by Gemini AI
+                </h5>
+                <ul>
+                  <li>
+                    Fully implemented using the Rails 7 framework in both the
+                    frontend and backend, with Turbo and StimulusJS on the
+                    frontend to increase interactivity by preventing page
+                    reloads for workout submissions.
+                  </li>
+                  <li>
+                    Google Gemini AI API used to analyze exercises as they are
+                    added to a workout, and later to evaluate the entire workout
+                    based on the exercises that compose it.
+                  </li>
+                  <li>
+                    Users first add a workout, then add exercises to the workout
+                    from a page that feels like an SPA and is constructed with a
+                    mobile-first approach. Rails controller actions manage the
+                    RESTful approach to persisting data, and Turbo allows for
+                    page updates without a full page reload.
+                  </li>
+                  <li>
+                    Users may receive suggested workouts by selecting muscle
+                    groups they wish to target and receiving a Gemini AI chatbot
+                    recommendation for which exercise to perform.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-display-container">
               <div class="w3-display-topleft w3-black w3-padding">CapApp</div>
               <div>
                 <a target="_blank" href="https://cap-app1000.herokuapp.com">
