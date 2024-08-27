@@ -64,13 +64,19 @@
 }
 .about-photo {
   clip-path: circle(50%);
-  width: auto;
+  width: 100%;
 }
+
 #about .flex-col {
   display: flex;
+
+  @media (max-width: 480px) {
+    display: block;
+  }
 }
 #about .short-bio {
   margin-left: 3vw;
+  flex: 1;
 }
 .short-bio .two-col {
   display: flex;
@@ -176,4 +182,10 @@ footer .contact h3:last-child {
 }
 footer a:hover {
   color: darkgreen;
+}
+
+.projects .w3-display-container {
+  @media (max-width: 480px) {
+    display: block;
+  }
 }
