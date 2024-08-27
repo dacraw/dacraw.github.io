@@ -8,7 +8,7 @@
 }
 .splash-image-text::after {
   content: "";
-  background: darkslategray;
+  background: slategray;
   position: absolute;
   top: 0;
   left: 0;
