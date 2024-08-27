@@ -190,13 +190,13 @@ footer > div {
   }
 }
 footer .contact {
+  display: block;
   padding-top: 5vh;
   border-top: 1px solid lightgray;
   margin-top: 5vh;
   width: 100%;
 
   @media (max-width: 600px) {
-    display: block;
     margin-top: 1em;
     padding-top: 1em;
   }
@@ -234,8 +234,4 @@ footer > div {
   @media (max-width: 600px) {
     margin-bottom: 2em;
   }
-}
-
-.w3-top {
-  /* width: 100vw; */
 }
