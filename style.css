@@ -41,7 +41,7 @@
 .projects .w3-display-topleft {
   display: none;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     display: block;
     position: relative;
     font-size: 1.5em;
@@ -50,7 +50,7 @@
 
 .projects .w3-row-padding > div {
   margin-bottom: 2em;
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     margin-bottom: 4em;
   }
 }
@@ -65,7 +65,7 @@
   width: 30vw;
   margin-right: 2vw;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     width: 100%;
   }
 }
@@ -87,7 +87,7 @@
 #about .flex-col {
   display: flex;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     display: block;
   }
 }
@@ -174,7 +174,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     display: block;
   }
 }
@@ -185,19 +185,17 @@ footer h3 {
 footer > div {
   width: 50%;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     margin: 0 auto;
   }
 }
 footer .contact {
   padding-top: 5vh;
   border-top: 1px solid lightgray;
-  display: flex;
-  justify-content: center;
   margin-top: 5vh;
   width: 100%;
 
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     display: block;
     margin-top: 1em;
     padding-top: 1em;
@@ -207,7 +205,7 @@ footer .contact h3 {
   border-right: 1px solid white;
   padding: 0 5vw;
   font-size: 1em;
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     border: none;
   }
 }
@@ -219,7 +217,7 @@ footer a:hover {
 }
 
 footer .project-list {
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
@@ -227,13 +225,17 @@ footer .project-list {
 }
 
 .projects .w3-display-container {
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     display: block;
   }
 }
 
 footer > div {
-  @media (max-width: 480px) {
+  @media (max-width: 600px) {
     margin-bottom: 2em;
   }
+}
+
+.w3-top {
+  /* width: 100vw; */
 }
