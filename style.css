@@ -201,8 +201,22 @@ footer a:hover {
   color: darkgreen;
 }
 
+footer .project-list {
+  @media (max-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+}
+
 .projects .w3-display-container {
   @media (max-width: 480px) {
     display: block;
+  }
+}
+
+footer > div {
+  @media (max-width: 480px) {
+    margin-bottom: 2em;
   }
 }
