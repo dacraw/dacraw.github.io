@@ -70,15 +70,8 @@
           <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">
             Projects
           </h3>
-          <h5>
-            Please Note: In order to save on app costs, some of these projects
-            may need time to spin up after visiting their respective links (no
-            more than 15 seconds). I hope there is understanding in this regard,
-            as the costs of these apps can rack up quickly over time if they are
-            constantly running. UptimeRobot is used to ping some projects, such
-            as WorkoutRecorder, but its interval is every 5 minutes and that
-            particular app will spin down after a minute or so. Thank you for
-            viewing my portfolio!
+          <h5 style="font-size: 12px">
+            Please Note: Apps may take a sec to spin up.
           </h5>
         </div>
 
@@ -86,46 +79,52 @@
           <div class="w3-col l3 m6">
             <div class="w3-display-container">
               <div class="w3-display-topleft w3-black w3-padding">
-                Solitaire
+                Dairy Free Eats
               </div>
               <div>
-                <a
-                  target="_blank"
-                  href="https://solitaire-dallas-to-vegas.fly.dev/"
-                >
-                  <img src="images/solitaire.png" alt="Solitaire" />
+                <a target="_blank" href="https://dairy-free-food.fly.dev/">
+                  <img
+                    src="images/dairy-free-eats.png"
+                    alt="Workout Recorder"
+                  />
                 </a>
                 <div class="project-sublinks">
-                  <a
-                    target="_blank"
-                    href="https://solitaire-dallas-to-vegas.fly.dev/"
+                  <a target="_blank" href="https://dairy-free-food.fly.dev/"
                     >Live</a
                   >
-                  <a target="_blank" href="https://github.com/dacraw/solitaire"
+                  <a
+                    target="_blank"
+                    href="https://github.com/dacraw/dairy-free-eats"
                     >Github</a
                   >
                 </div>
               </div>
               <div>
                 <h5>
-                  Basic Solitaire game utilizing strictly HTML/CSS/Javascript
+                  Rails 8 + React App allowing test Stripe transactions and
+                  order management via GraphQL API and Apollo Client
                 </h5>
                 <ul>
                   <li>
-                    Organized classes with OOP structure in order to demonstrate
-                    understanding and increase organization of the project.
+                    Order products created on Stripe using a test API key,
+                    manage order statuses as a Demo Admin and receive emails
+                    throughout the order status update process.
                   </li>
                   <li>
-                    Individual instances of classes, such as Card and
-                    TopCardColumn, interact with each other and their DOM
-                    elements in order to create an interactive experience with a
-                    stable win condition.
+                    Rails 8 authentication sends JSON responses that are invoked
+                    from React components with routing through React-Router v6.
                   </li>
                   <li>
-                    This project was started on a plane flight from Dallas back
-                    home to Las Vegas, and continued shortly afterward as a
-                    means of practicing OOP principles and brush up on vanilla
-                    Javascript, HTML and CSS capabilities.
+                    GraphQL API manages database mutation, such as changing
+                    order status through the React Admin Dashboard, with Apollo
+                    GraphQL codegen generating queries to be automatically
+                    imported into React components.
+                  </li>
+                  <li>
+                    Minimum 90% test coverage employing Rspec for request specs,
+                    Capybara for feature integration specs, and Jest/React
+                    Testing Library for comoponent unit tests -- all automated
+                    and performed upon Github pull request and deploy.
                   </li>
                 </ul>
               </div>
@@ -330,6 +329,54 @@
                     Prisma is used as the ORM with Postgresql as the database,
                     so that users may submit their score after completing the
                     game loop.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="w3-col l3 m6">
+            <div class="w3-display-container">
+              <div class="w3-display-topleft w3-black w3-padding">
+                Solitaire
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://solitaire-dallas-to-vegas.fly.dev/"
+                >
+                  <img src="images/solitaire.png" alt="Solitaire" />
+                </a>
+                <div class="project-sublinks">
+                  <a
+                    target="_blank"
+                    href="https://solitaire-dallas-to-vegas.fly.dev/"
+                    >Live</a
+                  >
+                  <a target="_blank" href="https://github.com/dacraw/solitaire"
+                    >Github</a
+                  >
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Basic Solitaire game utilizing strictly HTML/CSS/Javascript
+                </h5>
+                <ul>
+                  <li>
+                    Organized classes with OOP structure in order to demonstrate
+                    understanding and increase organization of the project.
+                  </li>
+                  <li>
+                    Individual instances of classes, such as Card and
+                    TopCardColumn, interact with each other and their DOM
+                    elements in order to create an interactive experience with a
+                    stable win condition.
+                  </li>
+                  <li>
+                    This project was started on a plane flight from Dallas back
+                    home to Las Vegas, and continued shortly afterward as a
+                    means of practicing OOP principles and brush up on vanilla
+                    Javascript, HTML and CSS capabilities.
                   </li>
                 </ul>
               </div>
